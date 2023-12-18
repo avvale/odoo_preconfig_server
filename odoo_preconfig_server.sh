@@ -4,7 +4,7 @@ SERVER_TIMEZONE="Europe/Madrid"
 # change server hostname
 sudo hostnamectl set-hostname ${SERVER_HOST_NAME}
 # change server timezone
-timedatectl set-timezone ${SERVER_TIMEZONE}
+sudo timedatectl set-timezone ${SERVER_TIMEZONE}
 
 # change auto update config
 cat <<EOF > ~/server-config-upgrades
