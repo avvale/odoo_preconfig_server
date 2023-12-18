@@ -2,7 +2,7 @@ SERVER_HOST_NAME="s06.beopen.cloud"
 SERVER_TIMEZONE="Europe/Madrid"
 
 # change server hostname
-sudo hostnamectl set-hostname ${SERVER_HOST}
+sudo hostnamectl set-hostname ${SERVER_HOST_NAME}
 # change server timezone
 timedatectl set-timezone ${SERVER_TIMEZONE}
 
@@ -12,7 +12,6 @@ APT::Periodic::Update-Package-Lists "1";
 APT::Periodic::Unattended-Upgrade "0";
 EOF
 sudo mv ~/server-config-upgrades /etc/apt/apt.conf.d/20auto-upgrades
-sudo rm ~/server-config-upgrades
 
 # update and upgrade server SO
 sudo apt-get update
