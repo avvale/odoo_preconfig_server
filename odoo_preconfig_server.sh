@@ -17,4 +17,7 @@ sudo mv ~/server-config-upgrades /etc/apt/apt.conf.d/20auto-upgrades
 sudo apt-get update
 sudo apt-get upgrade
 
-echo -e "* Preconfig Odoo Server Done!"
+echo "---------------------------------------"
+echo "Preconfig Odoo Server Done!"
+echo "Please, reboot server to apply changes"
+echo "---------------------------------------"
